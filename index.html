@@ -1,149 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Nitesh Portfolio</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald&amp;display=swap'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<title>Nitesh's Portfolio</title>  
 </head>
-<body>
-    <!-- https://smartmockups.com/mockup/apple-pro-display-xdr-qLiDy$wZLs-->
-    <!-- NavBar -->
-    <div class="navbar">
-        <div class="container flex">
-            <a href="" class="favicon-font">Nitesh</a>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#stats">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#showcase">Contact</a></li>
-                </ul>
-            </nav>
+
+<header>
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+     <a class="navbar-brand" href="#">Nitesh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">	
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about"> About </a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects"> Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#home-clients"> Tools</a></li>
+            <li class="nav-item"><a class="nav-link" href="#writings"> Writings</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1cJXkfB6IXMLtIwtR4xioM4KftnsoXCla/view?usp=sharing"> Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer"> Contact</a></li>
+          </ul>
         </div>
+      
+      </nav>
+  </div>
+  <div class="row pt-5 mb-5"></div>
+</header>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- <main>
+   <div class="intro">
+      <div class="intro-text ">
+          <h1 class="hide text-center">
+              <span class="text">Welcome To</span>
+          </h1>
+          <h1 class="hide text-center">
+            <span class="text">Nitesh's </span>
+          </h1>
+          <h1 class="hide text-center">
+              <span class="text">Portfolio....</span>
+          </h1>
+      </div>
     </div>
 
-    <!-- Showcase -->
-    <section class="showcase" id="showcase">
-        <div class="container grid">
-            <div class="showcase-text">
-                <h1>Hey There I'm Nitesh</h1>
-                <p>Welcome to my Portfolio.....</p>
-                <a href="https://drive.google.com/file/d/1cJXkfB6IXMLtIwtR4xioM4KftnsoXCla/view?usp=sharing" class="btn btn-outline">Get Resume</a>
-            </div>
+    <div class="slider bg-primary"></div>
+</main> -->
 
-            <div class="showcase-form card">
-                <h2>Contact me</h2>
-                <p></p>
-                <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact"> 
-                    <p class="hidden">
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                    </p>  
-                <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
-                    </div>
-                    <div class="from-control">
-                        <input type="text" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
-                    
-                </form>
-            </div>
 
-        </div>
-    </section>
+ 
+<section class="showcase" id="showcase">
 
-    <section class="stats" id="stats">
-        <div class="container">
-            <h2 class="md text-center ">
-                <b>ABOUT ME</b>
-            </h2>
-            <h3 class="stats-heading text-center my-1">
-                I'm Nitesh, I am currently pursuing Btech in Electronics and Communication Engineering at 
-                <i>National Institute Of Technology Jalandhar</i>. I have keen interests in Programming , FrontEnd Development , BackEnd Development. 
-              
-            </h3>
-            <div class="grid grid-3 text-center my-4">
-                <div>
-                    <i class="fas fa-chart-pie awesome-size"></i>
-                    <h3>Problem Solver</h3>
-                    <p class="text-secondary">I'm a curious learner with good communication skills. I love to solve problems and
-                        deliver results with the right quality and in a timely manner.
-                    </p>
-                </div>
-                
-                <div>
-                    <i class="fas fa-file-code awesome-size"></i>
-                    <h3>Designer + Developer</h3>
-                    <p class="text-secondary">I have been the <b>Web Head</b> of the Coding Club . I have conducted various 
-                        workshops to train students to learn to code and have made many contributions to <b>open source</b>.
-                    </p>
-                </div>
-
-                <div>
-                    <i class="fas fa-users awesome-size"></i>
-                    <h3>Team Player</h3>
-                    <p class="text-secondary"> 
-                        I am capable of being a good team player. 
-                        I enjoy working with others. 
-                        In my past work experience , I have been comfortable in both leadership and contributor roles. 
-                    </p>
-                <div>
-                
-            </div>
-        </div>
-    </section>
-
-    
   
+    
 
-    <section class="projects"  id="projects">
-        <h2 class="md text-center ">
-            <b>PROJECTS</b>
-        </h2>
-        <div class="container grid mar-top-bottom ar card-primary">
-            <div class="text-center">
-                
-                <img src="p3.png" alt="">
-             </div>
-             <div>
-                <h1><b>CryptoCount</b></h1>
-                 <p>CryptoCount is a chrome extension which fetches the data of the top
-                    trending cryptocurrencies using the API of CryptoCompare. The
-                    fetched data includes the current prices, the highest and lowest prices
-                    that went for all the trending cryptocoins. </p>
-                <a href="https://www.geeksforgeeks.org/create-a-crypto-currency-price-tracking-chrome-extension/" class="btn btn-primary pill-button">Read More</a>
-            </div>
-        </div> 
+<div class="hero slide animated fadeIn container">
 
-        <div class="container grid mar-top-bottom al card-primary">
-            <div class="text-center">
-                
-                <img src="p4.png" alt="">
+  <div class="wrapper wrapper--hero flex-2-col">
+
+      <div class=" content-text hero__intro">
+
+        <p class="text-dark"><b>Hey There !!</b></p>
+          <h1 class="page-h1 hero__title shadow-lg">I'm Nitesh</h1>
+
+          <p class="text-dark"><b>Welcome to my Portfolio..</b></p>
+
+         <a data-scroll href="https://drive.google.com/file/d/1cJXkfB6IXMLtIwtR4xioM4KftnsoXCla/view?usp=sharing" class="btn btn-outline-primary">Get Resume</a>
+         <a data-scroll href="#projects" class="btn btn-outline-danger">See Projects</a>
+         <a data-scroll href="#footer" class="btn btn-outline-success">Contact Me</a>
+         <ul class="nav mt-4">
+               
+          <li class="nav-item"><a href="https://github.com/Niteshkumar152" class="nav-link pl-0"><i class="fab fa-github fa-2x"></i></a></li>
+          <li class="nav-item"><a href="https://linkedin.com/in/nitesh-kumar-138b29158/" class="nav-link"><i class="fab fa-linkedin fa-2x"></i></a></li>
+          <li class="nav-item"><a href="mailto:nitesh26589@gmail.com" class="nav-link"><i class="fab fa-google fa-2x"></i></a></li>
+          
+      </ul>
+          
+      </div>
+
+
+      <div class="content-visual">
+
+          <div class="floating-images">
+            <ul class="floating-images__container">
+            <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img1.jfif" alt="skill">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img2.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img3.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img4.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img5.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img6.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img7.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img8.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img9.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img10.jfif" alt="">
+              </div>
+          </li>
+          <li class="floating-image">
+              <div class="image img-container">
+                  <img src="img11.jfif" alt="">
+              </div>
+          </li>
+      </ul>
+          </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section class="about" id="about">
+  
+  <div class="container">
+
+    <header class="main-header">
+      <h1><span> About</span> Me</h1>
+    </header>
+      <p class="text-center mb-4"> I'm Nitesh, I am currently pursuing Btech in Electronics and Communication Engineering at 
+        <i>National Institute Of Technology Jalandhar</i>. I have keen interests in FrontEnd Development , BackEnd Development and Open Source contribution. 
+      </p>
+   
+        <div class="row">
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-chart-pie awesome-size"></i>
+            <h3>Problem Solver</h3>
+            <p>I'm a curious learner with good communication skills. I love to solve problems and
+              deliver results with the right quality and in a timely manner.</p>
+         </div>
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-file-code awesome-size"></i>
+            <h3>Designer + Developer</h3>
+            <p class="text-secondary">I have been the <b>Web Head</b> of the Coding Club . I have conducted various 
+              workshops to train students to learn to code and have made many contributions to <b>open source</b>.</p>
             </div>
-            <div>
-                <h1><b>Graduation Prognosis</b></h1>
-                <p>Graduation Prognosis is a Machine Learning based prediction project
-                    which has its frontend in React and the backend is rendered using Flask.
-                    The model used in the project predicts the chances of a student getting
-                    admission for Masters in colleges around the US. It takes into
-                    consideration various parameters like GRE score, TOEFL score,
-                    CGPA, Research projects etc. </p>
-                    <a href="https://github.com/Niteshkumar152/GraduationPrognosis" class="btn btn-primary pill-button">Visit Site</a>
-            </div>
-         </div>  
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-users awesome-size"></i>
+            <h3>Team Player</h3>
+            <p> 
+              I am capable of being a good team player. 
+              I enjoy working with others. 
+              In my past work experience , I have been comfortable in both leadership and contributor roles. </p>
+           </div>
+        </div>
+      </div>
+
+     
+
+
+</section> 
+
+
+<div class="row mt-5 mb-5"></div>
+<div class="row mt-5 mb-5"></div>
+
+
+<section class="projects" id="projects">
+  <header class="main-header">
+    <h1>My<span> Projects</span></h1>
+    <p>Here are some projects done by me.
+    </p>
+  </header>
+<!-- https://smartmockups.com/mockup/apple-pro-display-xdr-qLiDy$wZLs-->
+  <main class="container">
+    <section class="card">
+      <img src="p1.png" alt="" />
+      <div>
         
-         <div class="container grid mar-top-bottom ar card-primary">
-            <div class="text-center">
-               <img src="p1.png" alt="">
-            </div>
-            <div>
-                <h1><b>BookKeeper NITJ</b></h1>
+        <h3><b>CryptoCount</b></h3>
+        <p>CryptoCount is a chrome extension which fetches the data of the top
+           trending cryptocurrencies using the API of CryptoCompare. The
+           fetched data includes the current prices, the highest and lowest prices
+           that went for all the trending cryptocoins. </p>
+           <span class="badge badge-primary">HTML</span>
+           <span class="badge badge-warning">CSS</span>
+           <span class="badge badge-success">JavaScript</span>
+           <span class="badge badge-danger">API</span>
+           <span class="badge badge-dark">Chrome Extension</span>
+          <a href="https://www.geeksforgeeks.org/create-a-crypto-currency-price-tracking-chrome-extension/"><button class="btn btn-outline-primary">Read More</button></a>
+
+      </div>
+     
+    </section>
+
+    <section class="card" data-aos="fade-left">
+      <img src="p2.png" alt="" />
+      <div>
+        
+        <h3><b>PathFinder</b></h3>
+                 <p>PathFinder is a visualizing tool that lets visualizing various algorithms.
+                     Here Dijkastra'a algorithm is visualized. This tool is build using React JS 
+                     and Bootstrap.
+                 </p>
+                 <span class="badge badge-primary">React</span>
+           <span class="badge badge-warning">Bootstrap</span>
+           
+                <a href="https://niteshkumar152.github.io/pathFinder/"><button class="btn btn-outline-primary">Visit Site</button></a>
+        
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-right">
+      <img src="p3.png" alt="" />
+      <div>
+        <h3><b>BookKeeper NITJ</b></h3>
                 <p>Bookkeepernitj is a web based application which helps students save
                     money on books. Students can Signup with Google and upload details
                     of books available with them. Users in need of these books can search
@@ -153,115 +268,209 @@
                     mongoose for managing the database along with various other
                     dependencies. 
                     </p>
-                <a href="http://bookkeepernitj.herokuapp.com/" class="btn btn-primary pill-button">Visit Site</a>
+                    <span class="badge badge-primary">Bootstrap</span>
+           <span class="badge badge-warning">NodeJs</span>
+           <span class="badge badge-success">MongoDB</span>
+           <span class="badge badge-danger">NPM</span>
+                <a href="http://bookkeepernitj.herokuapp.com/"><button class="btn btn-outline-primary">Visit Site</button></a>
                
-            </div>
-        </div>  
+      
+      </div>
+    </section>
 
-        <div class="container grid mar-top-bottom al card-primary">
-            <div class="text-center">
-                <img src="p2.png" alt="">
-             </div>
-             <div>
-                <h1><b>PathFinder</b></h1>
-                 <p>PathFinder is a visualizing tool that lets visualizing various algorithms.
-                     Here Dijkastra'a algorithm is visualized. This tool is build using React JS 
-                     and Bootstrap.
-                 </p>
-                <a href="https://niteshkumar152.github.io/pathFinder/" class="btn btn-primary pill-button">Visit Site</a>
+    <section class="card" data-aos="fade-left">
+      <img src="p4.png" alt="" />
+      <div>
+        <h3><b>Graduation Prognosis</b></h3>
+        <p>Graduation Prognosis is a Machine Learning based prediction project
+        which has its frontend in React and the backend is rendered using Flask.
+        The model used in the project predicts the chances of a student getting
+        admission for Masters in colleges around the US. It takes into
+        consideration various parameters like GRE score, TOEFL score,
+        CGPA, Research projects etc. </p>
+        <span class="badge badge-primary">React</span>
+           <span class="badge badge-warning">Machine Learning</span>
+           <span class="badge badge-success">FLASK</span>
+           
+        <a href="#"><button class="btn btn-outline-primary">Visit Site</button></a>
                
-            </div>
-        </div>
+        
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-right">
+      <img src="p5.png" alt="" />
+      <div>
+        <h3>Weather App</h3>
+        <p>
+          This is a website that feteches weather data for a city . The fetch calls are 
+          made to open weatherApi. The fetched results are rendered to the FrontEnd.
+        </p>
+        <span class="badge badge-primary">HTML</span>
+           <span class="badge badge-warning">CSS</span>
+           <span class="badge badge-success">JavaScript</span>
+           <span class="badge badge-danger">API</span>
+        <a href="https://pacific-sea-70481.herokuapp.com/"><button class="btn btn-outline-primary">Visit Site</button></a>
+      </div>
+    </section>
+  </main>
 </section>
-    
-    <section class="writings">
-        <h2 class="md text-center">
-            <b>My Writings</b>
-        </h2>
-        <div class="container mar-top-bottom">
-            
-             <div>
-                
-                <h1><b>Create a Chrome Extension</b></h1>
+
+<div class="row mt-5 mb-5"></div>
+<div class="row mt-5 mb-5"></div>
+
+
+<section class="home-clients" id="home-clients">
+  <div class="container">
+    <div class="clients-section">
+      <div class="section-title text-center">
+        <header class="main-header mt-2">
+          <h1><span>Tools & </span>Technology</h1>
+        <p>These are some Tools & Technologies that I have been working on!!</p>
+      </header>
+      </div>
+      <div class="clients-container">
+        <div class="clients-group">
+          <div class="clients-item hoopsai"><img src="nodejs.png"></div>
+        </div>
+        <div class="clients-group">
+          <div class="clients-item agoda"><img src="bootstrap.png"></div>
+          <div class="clients-item getsafe"><img src="c++.png"></div>
+        </div>
+        <div class="clients-group">
+          <div class="clients-item grab"><img src="git.png"></div>
+          <div class="clients-item teachable"><img src="js.png"></div>
+          <div class="clients-item anyleads"><img src="python.png"></div>
+        </div>
+        <div class="clients-group">
+          <div class="clients-item agoda"><img src="mongodb.png"></div>
+          <div class="clients-item getsafe"><img src="sql.png"></div>
+        </div>
+        <div class="clients-group">
+          <div class="clients-item roger"><img src="react.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<div class="row mt-5 mb-5"></div>
+<div class="row mt-5 mb-5"></div>
+
+<section class="writings" id="writings">
+  <div class="container">
+    <header class="main-header">
+      <h1>My <span>Writings </span></h1>
+    <p></p>
+  </header>
+    <div class="row">
+      <div class="media border p-3">
+        <img src="gfg.jfif" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+          <h4>Create a Chrome Extension <small><i>Posted on September 28, 2020</i></small></h4>
                  <p>In this article I wrote about creating your first chrome extension from the fundamentals
-                     of the web. This article is published on <span class="gfg-color"><b>GeeksforGeeks</b></span>.
+                     of the web. This article is published on <span class="text-success"><b>GeeksforGeeks</b></span>.
                  </p>
-                <a href="https://www.geeksforgeeks.org/create-a-crypto-currency-price-tracking-chrome-extension/" class="btn btn-primary ">Read More</a>
-             </div>
+                 <span class="badge badge-primary">HTML</span>
+           <span class="badge badge-warning">CSS</span>
+           <span class="badge badge-success">JavaScript</span>
+           <span class="badge badge-danger">API</span>
+           <span class="badge badge-dark">Chrome Extension</span>
+               <p class="float-right"> <a href="https://www.geeksforgeeks.org/create-a-crypto-currency-price-tracking-chrome-extension/" class="btn btn-outline-primary ">Read More</a></p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="techstack">
-            <h2 class="md text-center">
-                <b>My Technology Stack</b>
-            </h2>
-            <div class="container flex">
-                <div class="card">
-                    <h4>C++</h4>
-                    <img src="c++.png" alt="">
-                </div>
-                <div class="card">
-                    <h4>Python</h4>
-                    <img src="python.png" alt="">
-                  </div>
-                  <div class="card">
-                    <h4>HTML</h4>
-                    <img src="html.png" alt="">
-                  </div>
-                  <div class="card">
-                    <h4>CSS</h4>
-                    <img src="css.png" alt="">
-                  </div>
-                  <div class="card">
-                    <h4>JavaScript</h4>
-                    <img src="js.jpg" alt="">
-                  </div>
-                  <div class="card">
-                    <h4>Bootstrap</h4>
-                    <img src="bootstrap.png" alt="">
-                  </div>
-                  <div class="card">
-                    <h4>React</h4>
-                    <img src="react.png" alt="">
-                  </div>
-                  <div class="card">
-                    <h4>Github</h4>
-                    <img src="git.png" alt="">
-                  </div>
-            </div>
-    </section>
 
-    <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Nitesh Kumar
-                </h1>
-                <p>Copyright &copy; 2020</p>
-                <p>nitesh26589@gmail.com</p>
-                <p>+91-9814426589</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#stats">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#showcase">Contact Me</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="https://github.com/Niteshkumar152"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://linkedin.com/in/nitesh-kumar-138b29158/"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100007073178462"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="https://twitter.com/Nitesh26589"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="mailto:nitesh26589@gmail.com"><i class="fab fa-google fa-2x"></i></a>
-            </div>
-            <a href="https://drive.google.com/file/d/1cJXkfB6IXMLtIwtR4xioM4KftnsoXCla/view?usp=sharing" class="btn btn-outline">Get Resume</a>
-            <a href="#showcase" class="btn btn-outline">Contact Me</a>
-            <a href="mailto:nitesh26589@gmail.com" class="btn btn-outline">Email Me</a>
-        </div>
-    </footer>
+<div class="row mt-5 mb-5"></div>
+<div class="row mt-5 mb-5"></div>
 
-    
+<section class="footer" id="footer">
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5">
+              <h5><i class="fas fa-user-circle"></i> Nitesh Kumar</h5>
+              <div class="row">
+                  <div class="col-6">
+                      <ul class="list-unstyled">
+                          <li><a href="mailto:nitesh26589@gmail.com" ><i class="fas fa-envelope-open-text"></i> Nitesh26589@gmail.com</a></li>
+                          <!-- <li><a href="">Niteshk.ec.17@nitj.ac.in</a></li> -->
+                          <li><i class="fas fa-phone"></i> +91-9814426589</a></li>
+                         
+                      </ul>
+                  </div>
+                  <div class="col-6">
+                      <ul class="list-unstyled">
+                          <li><a href="#about">About</a></li>
+                          <li><a href="#projects">Projects</a></li>
+                          <li><a href="https://drive.google.com/file/d/1cJXkfB6IXMLtIwtR4xioM4KftnsoXCla/view?usp=sharing">Resume</a></li>
+                          <li><a href="#footer">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <ul class="nav">
+               
+                  <li class="nav-item"><a href="https://github.com/Niteshkumar152" class="nav-link pl-0"><i class="fab fa-github fa-2x"></i></a></li>
+                  <li class="nav-item"><a href="https://linkedin.com/in/nitesh-kumar-138b29158/" class="nav-link"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                  <li class="nav-item"><a href="mailto:nitesh26589@gmail.com" class="nav-link"><i class="fab fa-google fa-2x"></i></a></li>
+                  
+              </ul>
+              <br>
+          </div>
+          <div class="col-md-2">
+              <h5 class="text-md-right">Contact Me</h5>
+              <hr>
+          </div>
+          
+
+            <div class="col-md-5">
+              <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
+                  <input type="hidden" name="form-name" value="contact"> 
+                  <p class="hidden">
+                      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  </p>  
+                  <div class="form-group">
+                          <input type="text"class="form-control" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="company" placeholder="Company Name" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="email" placeholder="Email" required>
+                  </div>
+                  <fieldset class="form-group text-xs-right">
+                    <button type="submit" value="submit" class="btn btn-outline-light">Send</button>
+                </fieldset>
+                  
+              </form>
+          </div>
+
+          </div>
+      </div>
+  </div>
+</footer>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+<script id="rendered-js" >
+AOS.init({
+offset: 400, // offset (in px) from the original trigger point
+delay: 0, // values from 0 to 3000, with step 50ms
+duration: 1000 // values from 0 to 3000, with step 50ms
+});
+//# sourceURL=pen.js
+</script>
+<script src="app.js"></script>
 
 </body>
 
